@@ -1,15 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package com.mycompany.project;
+package formas;
 
 /**
+ * Exercicio 2 - Herda de FormaGeometrica e sobrescreve calcularArea().
  *
- * @author laboratorio
+ * @author Eduardo Butzen
  */
 public class Triangulo extends FormaGeometrica{
-    
+
     private float base;
     private float altura;
 
@@ -28,13 +25,13 @@ public class Triangulo extends FormaGeometrica{
     public void setAltura(float altura) {
         this.altura = altura;
     }
-    
+
     @Override
     public float calcularArea(){
-        
-        area = base * altura;
+
+        area = (base * altura) / 2;
+        System.out.println("Area do triangulo: " +area);
         return area;
-        
     }
-    
+
 }
